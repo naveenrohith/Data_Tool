@@ -1,0 +1,81 @@
+/* Custom styles for weather section */
+.custom-date-picker .DatePickerRange {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.custom-date-picker .DatePickerRange input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+
+.custom-date-picker .DatePickerRange .DatePicker__calendarContainer {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.custom-date-picker .DatePickerRange .DatePicker__calendarContainer .DatePicker__day--selected {
+    background-color: #00A1D6;
+    color: white;
+}
+
+.custom-dropdown {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.custom-dropdown .Select-control {
+    border: none;
+    background-color: #ffffff;
+}
+
+.custom-dropdown .Select-menu-outer {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.custom-checklist .dash-checklist input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checklist .dash-checklist label {
+    padding-left: 25px;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.custom-checklist .dash-checklist label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ced4da;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.custom-checklist .dash-checklist input[type="checkbox"]:checked + label:before {
+    background-color: #00A1D6;
+    border-color: #00A1D6;
+}
+
+.custom-checklist .dash-checklist input[type="checkbox"]:checked + label:after {
+    content: '\2713';
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    font-size: 14px;
+    color: white;
+}
