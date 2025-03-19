@@ -37,12 +37,14 @@ Bootstrap: Uses dash-bootstrap-components for responsive layouts and card-based 
 Roboto Font: Applied via an external stylesheet for a consistent typography.
 Custom CSS: Enhances the weather section's date picker, dropdown, and checklist with modern styling (see custom.css).
 Non-Editable Elements: UI elements are locked to prevent accidental edits using custom styles and properties.
+
 Project Structure
 app.py: Main Flask application file that initializes the server, Dash apps (login and dashboard), and defines routes (/, /login, /dashboard, /logout).
 dashboard_app.py: Configures the Dash dashboard app, including layout, callbacks for tab navigation, data upload, weather fetching, and graph rendering.
 login_app.py: Configures the Dash login app with a simple username/password form and authentication logic.
 sample_data.csv: Example CSV file with chiller performance data (power, supply/return temperatures) from July 20, 2023, to October 5, 2023.
 custom.css: Custom styles for the weather section's UI components.
+
 Dependencies
 Python 3.x
 Flask
@@ -53,3 +55,6 @@ plotly.express
 requests
 flask-caching
 base64, io (for file handling)
+
+Install dependencies using:
+pip install flask dash dash-bootstrap-components pandas plotly requests flask-caching
